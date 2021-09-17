@@ -11,7 +11,7 @@ import seaborn as sns
 from sklearn.linear_model import LogisticRegression
 from sklearn import metrics
 
-url = "https://raw.githubusercontent.com/JWarmenhoven/ISLR-python/master/Notebooks/Data/Smarket.csv"
+path = "Data/Smarket.csv"
 
 df = pd.read_csv(url)
 
@@ -24,12 +24,17 @@ test_labels = df[df.Year == 2005][["Lag1", "Lag2", "Lag3", "Lag4", "Lag5", "Volu
 
 lags = df[["Lag1", "Lag2", "Lag3", "Lag4", "Lag5", "Today"]]
 
-figure, axis = plt.subplots(1, 2)
+figure, axis = plt.subplots(1, 2, figsize=(20,10))
 
 covMatrix = lags.corr()
 sns.heatmap(covMatrix, annot=True, cmap="YlGnBu", ax=axis[0])
 axis[1].plot(df["Volume"])
+plt.tight_layout()
 plt.show()
+
+"""
+Logistic Regression
+"""
 
 lr = LogisticRegression()
 lr.fit(train_labels, train_targets)
@@ -48,6 +53,12 @@ plt.xlabel('Predicted label')
 plt.show()
 
 print("Accuracy: ", metrics.accuracy_score(test_targets, y_preds))
+
+"""
+LDA
+"""
+
+
 
 
 
