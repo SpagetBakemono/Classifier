@@ -10,12 +10,14 @@ Preliminary plots (Correlation matrix and Volume vs Time)
 
 Confusion Matrices: 
 
-<a href="url"><img src="https://github.com/SpagetBakemono/Classifier/blob/main/Images/lrCnfMatrix.png" align="left" height="400" width="400" ></a>
-<a href="url"><img src="https://github.com/SpagetBakemono/Classifier/blob/main/Images/ldaConfMatrix.png" align="left" height="400" width="400" ></a>
-<a href="url"><img src="https://github.com/SpagetBakemono/Classifier/blob/main/Images/knnConfMatrix.png" align="left" height="400" width="400" ></a>
+<a href="url"><img src="https://github.com/SpagetBakemono/Classifier/blob/main/Images/lrCnfMatrix.png" align="left" height="350" width="350" ></a>
+<a href="url"><img src="https://github.com/SpagetBakemono/Classifier/blob/main/Images/ldaConfMatrix.png" align="left" height="350" width="350" ></a>
+<a href="url"><img src="https://github.com/SpagetBakemono/Classifier/blob/main/Images/knnConfMatrix.png" align="left" height="350" width="350" ></a>
 
 Accuracies:
 
 LR Accuracy:  0.4880952380952381
+
 LDA Accuracy:  0.4801587301587302
+
 KNN Accuracy:  0.6071428571428571
